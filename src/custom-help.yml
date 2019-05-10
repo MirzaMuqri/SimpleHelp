@@ -1,0 +1,22 @@
+# This is the default /help message.
+no-permissions: "&cYou have no permissions to use this commands."
+default-help:
+  - "&a--------------------------"
+  - "&7This is a custom help plugins"
+  - "&7made by Mukri.xyz!"
+  - " "
+  - "&7Make sure to setup the following plugins by adding your custom arguments on the custom-help.yml!"
+  - "&a--------------------------"
+
+custom-help:
+  # This is the arguments /help <arguments> | eg /help 1 |
+  # We recommend you to use only lowercase for the arguments.
+  '1':
+    # You can use your own permissions
+    permission: "your.permissions"
+    # There is a custom placeholder such as %name%
+    message:
+      - "&aThis is the first line"
+      - "&cThis is the second line"
+      - " "
+      - "&cdo /help <arguments> for next page"

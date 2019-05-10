@@ -1,0 +1,10 @@
+main: xyz.mukri.simplehelp.Core
+name: SimpleHelp
+version: 1.0.0
+description: Custom simplehelp plugins by Mukri
+author: Mukri.xyz
+commands:
+  simplehelp:
+    description: SimpleHelp admin commands.
+  help:
+    description: Custom help.
