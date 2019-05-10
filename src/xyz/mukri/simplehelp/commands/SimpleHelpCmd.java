@@ -60,7 +60,7 @@ public class SimpleHelpCmd implements CommandExecutor {
                             Core.getInstance().customHelpFile.removeCommands(arguments);
                             Core.getInstance().customHelpFile.save();
 
-                            p.sendMessage("§Successfully removed /help " + arguments + " from the custom-yml config.");
+                            p.sendMessage("§7Successfully removed /help " + arguments + " from the custom-yml config.");
                         }
                         else {
                             p.sendMessage("§7Could not found /help " + arguments + "! Make sure to check the config for the name. cAsE-SeNsItiVe ");

@@ -42,8 +42,11 @@ public class HelpCmd implements CommandExecutor {
                     List<String> msg = plugin.customHelpFile.getCustomHelp(arguments);
 
                     for (String msgs : msg) {
-                        p.sendMessage(plugin.customHelpFile.replaceAllReg(p, msgs));
+                        p.sendMessage(replaceAllMsg(p, msgs));
                     }
+                }
+                else {
+                   p.performCommand("help");
                 }
 
             }
@@ -51,12 +54,16 @@ public class HelpCmd implements CommandExecutor {
                 List<String> msg = plugin.customHelpFile.getDefaultCustomHelp();
 
                 for (String msgs : msg) {
-                    p.sendMessage(plugin.customHelpFile.replaceAllReg(p, msgs));
+                    p.sendMessage(replaceAllMsg(p, msgs));
                 }
 
             }
         }
 
         return false;
+    }
+
+    public String replaceAllMsg(Player p, String msg) {
+        return msg.replaceAll("&", "§").replaceAll("%name%", p.getName());
     }
 }
