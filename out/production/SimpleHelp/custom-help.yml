@@ -11,6 +11,9 @@ default-help:
 custom-help:
   # This is the arguments /help <arguments> | eg /help 1 |
   # We recommend you to use only lowercase for the arguments.
+  # Available placeholders:-
+  # %name% | %displayname% | %level% | %death% | %kills% | %damage_dealt%
+  # %gamemode% | %chest_open% | %fish_caught% | %item_enchanted% | %mobs_killed%
   '1':
     # You can use your own permissions
     permission: "your.permissions"
